@@ -3,102 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>News & Events - Nyamira South Sub-County Education</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.js"></script>
+    <style>
+      /* Custom styles for Login and Sign Up buttons */
+      .rounded-btn {
+          border-radius: 30px;
+          border: 2px solid #007bff;
+          padding: 5px 15px;
+          font-weight: bold;
+          color: #007bff;
+          text-decoration: none;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .rounded-btn:hover {
+          background-color: #007bff;
+          color: #fff;
+      }
+  </style>
 </head>
 <body>
-    
-    <section>
-        <div class="header">
-            <h1 class="display-3 bg-info text-light text-center p-4 mt-2">Nyamira South Education Office</h1>
-        </div>
-    </section>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Sub-County Office</a>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/About.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/Departments.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Departments
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/scde-office.html">SCDE</a></li>
-                  <li><a class="dropdown-item" href="/scqaso-office.html">SCQASO</a></li>
-                  <li><a class="dropdown-item" href="/auditors-office.html">AUDIT</a></li>
-                  <li><a class="dropdown-item" href="/exmainations.html">Examinations</a></li>
-                  <li><a class="dropdown-item" href="/clerical-records.html">CLERICAL</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="/logistics.html">Executive</a></li>
+  <section>
+    <div class="sticky-lg-header">
+      <h1 class="display-5 text-center text-light bg-primary">My Sub-County Education Website</h1>
+    </div>
+   </section>
+    <!-- Navbar (same as the one in your other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nyamira Sub-County</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="scde-office.html">SCDE</a></li>
+                            <li><a class="dropdown-item" href="scqaso-office.html">SCQASO</a></li>
+                            <!-- Add other department links -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Institutions.html">Institutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/newsevents.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FAQs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contacts.html">Contact Us</a>
+                    </li>
                 </ul>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="/Institutions.html">Institutions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Projects.html">Projects</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Services.html">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/FAQs.html">FAQs</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Contacts.html">Contact Us</a>
-            </li>
-          </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
+    <!-- Page Header -->
+    <div class="container mt-5">
+        <h1 class="display-5 text-center">News & Events</h1>
+        <p class="text-center text-muted">Stay updated with the latest news and upcoming events in the Sub-County.</p>
+    </div>
 
-    <footer class="bg-info text-light py-4">
+    <!-- News Section -->
+    <section class="container mt-5">
+        <h2 class="mb-4">Latest News</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="News Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">School Infrastructure Upgrade</h5>
+                        <p class="card-text">Several primary and secondary schools in the sub-county will receive upgrades to their classrooms and facilities to improve the learning environment.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="News Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">New Teacher Recruitment</h5>
+                        <p class="card-text">The Sub-County Education Office is recruiting 50 new teachers to cater for the increased number of students following the CBC implementation.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="container mt-5">
+        <h2 class="mb-4">Upcoming Events</h2>
+        <div class="accordion" id="eventsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Sub-County Science Fair - October 15, 2024
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#eventsAccordion">
+                    <div class="accordion-body">
+                        The annual Sub-County Science Fair will showcase innovative projects by students from primary and secondary schools. Parents, teachers, and students are all invited to attend and support the young scientists.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Teacher Training Workshop - November 20, 2024
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#eventsAccordion">
+                    <div class="accordion-body">
+                        A comprehensive training workshop will be conducted for teachers in the sub-county, focusing on implementing the Competency-Based Curriculum (CBC) and improving pedagogical techniques.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        End of Year Prize Giving Ceremony - December 5, 2024
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#eventsAccordion">
+                    <div class="accordion-body">
+                        The Sub-County Education Office will host its annual prize-giving ceremony to recognize outstanding students, teachers, and schools for their achievements over the year.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-info text-light py-4 mt-5">
         <div class="container">
             <div class="row">
-                <!-- Company Info -->
                 <div class="col-md-4 mb-3">
-                    <h5>Nyamira South Education</h5>
-                    <p>Providing, promoting and coordinating quality education, training, researching and enhancing integration of Science Technology and Innovation into national production system for sustainable development.</p>
+                    <h5>Sub-county Education</h5>
+                    <p>Providing, promoting, and coordinating quality education, training, researching, and enhancing integration of Science Technology and Innovation into national production systems for sustainable development.</p>
                 </div>
-                <!-- Quick Links -->
                 <div class="col-md-4 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                      <li><a class="text-light" href="/">Home</a></li>
-                      <li><a class="text-light" href="/About.html">About Us</a></li>
-                      <li><a class="text-light" href="/Departments.html">Departments</a></li>
-                      <li><a class="text-light" href="/Institutions.html">Institutions</a></li>
-                      <li><a class="text-light" href="/Services.html">Services</a></li>
-                      <li><a class="text-light" href="/resources.html">Resources</a></li>
-                      <li><a class="text-light" href="/newsevents.html">News & Events</a></li>
-                     <li><a class="text-light" href="/FAQs.html">FAQs</a></li>
-                      <li><a class="text-light" href="/Contacts.html">Contact Us</a></li>
+                        <li><a class="text-light" href="/">Home</a></li>
+                        <li><a class="text-light" href="/About.html">About Us</a></li>
+                        <li><a class="text-light" href="/Departments.html">Departments</a></li>
+                        <li><a class="text-light" href="/Institutions.html">Institutions</a></li>
+                        <li><a class="text-light" href="/FAQs.html">FAQs</a></li>
+                        <li><a class="text-light" href="/Contacts.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <!-- Contact Info -->
                 <div class="col-md-4 mb-3">
                     <h5>Contact Us</h5>
                     <p><strong>Address:</strong> 4-40500, Nyamira, Kenya</p>
                     <p><strong>Email:</strong> scdenyamira@gmail.com</p>
                     <p><strong>Phone:</strong> +254 781504768</p>
-                    <div>
-                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i> Twitter</a>
-                        <a href="#" class="text-light"><i class="bi bi-instagram"></i> Instagram</a>
-                    </div>
                 </div>
             </div>
             <div class="text-center mt-4">
@@ -106,5 +188,6 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+
+    <!-- Bootstrap JS and dependencies -->
+   
