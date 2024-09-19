@@ -3,117 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sub-County Education Website</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>FAQs - Nyamira South Sub-County</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .faq-question {
+            font-weight: bold;
+        }
+        .faq-answer {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-   <section>
+
+  <section>
     <div class="sticky-lg-header">
       <h1 class="display-5 text-center text-light bg-primary">My Sub-County Education Website</h1>
     </div>
    </section>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Nyamira Sub-County</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/About.html">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Departments
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="Departments/scde-office.html">SCDE</a></li>
-              <li><a class="dropdown-item" href="Departments/scqaso-office.html">SCQASO</a></li>
-              <li><a class="dropdown-item" href="Departments/ict.html">ICT</a></li>
-              <li><a class="dropdown-item" href="Departments/examinations.html">Examinations</a></li>
-              <li><a class="dropdown-item" href="Departments/clerical-records.html">Clerical</a></li>
-              <li><a class="dropdown-item" href="Departments/auditors-office.html">Audit</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Institutions
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="Institutions/ecde.html">ECDE</a></li>
-              <li><a class="dropdown-item" href="Institutions/primary.html">Primary</a></li>
-              <li><a class="dropdown-item" href="Institutions/sne.html">SNE</a></li>
-              <li><a class="dropdown-item" href="Institutions/junior.html">Junior School</a></li>
-              <li><a class="dropdown-item" href="Institutions/secondary.html">Secondary</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/resources.html">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/newsevents.html">News & Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FAQs.html">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Contacts.html">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nyamira Sub-County</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="scde-office.html">SCDE</a></li>
+                            <li><a class="dropdown-item" href="scqaso-office.html">SCQASO</a></li>
+                            <li><a class="dropdown-item" href="clerical-records.html">Clerical/Records</a></li>
+                            <!-- Other departments can be added here -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Institutions.html">Institutions</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resources.html">Resources</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/newsevents.html">News & Events</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FAQs.html">FAQs</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contacts.html">Contact Us</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FAQs Page Content -->
+    <div class="container mt-5">
+        <h1 class="display-5 text-center">Frequently Asked Questions (FAQs)</h1>
+        <p class="text-center text-muted">Get answers to the most commonly asked questions about the Nyamira South Sub-County Education Office.</p>
 
-
-
-    <footer class="bg-info text-light py-4">
-        <div class="container">
-            <div class="row">
-                <!-- Company Info -->
-                <div class="col-md-4 mb-3">
-                    <h5>Nyamira South Education</h5>
-                    <p>Providing, promoting and coordinating quality education, training, researching and enhancing integration of Science Technology and Innovation into national production system for sustainable development.</p>
-                </div>
-                <!-- Quick Links -->
-                <div class="col-md-4 mb-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="text-light" href="/">Home</a></li>
-                        <li><a class="text-light" href="/About.html">About Us</a></li>
-                        <li><a class="text-light" href="/Departments.html">Departments</a></li>
-                        <li><a class="text-light" href="/Institutions.html">Institutions</a></li>
-                        <li><a class="text-light" href="/Services.html">Services</a></li>
-                        <li><a class="text-light" href="/Projects.html">Projects</a></li>
-                        <li><a class="text-light" href="/faqs">FAQs</a></li>
-                        <li><a class="text-light" href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!-- Contact Info -->
-                <div class="col-md-4 mb-3">
-                    <h5>Contact Us</h5>
-                    <p><strong>Address:</strong> 4-40500, Nyamira, Kenya</p>
-                    <p><strong>Email:</strong> scdenyamira@gmail.com</p>
-                    <p><strong>Phone:</strong> +254 781504768</p>
-                    <div>
-                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i> Twitter</a>
-                        <a href="#" class="text-light"><i class="bi bi-instagram"></i> Instagram</a>
+        <div class="accordion mt-4" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How do I contact the Sub-County Education Office?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can contact the Sub-County Education Office via email at <a href="mailto:scdenyamira@gmail.com">scdenyamira@gmail.com</a> or by calling +254 781504768. You can also visit our office located in Nyamira town at the address provided on the <a href="/Contacts.html">Contact Us</a> page.
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <p class="mb-0">© 2024 Nyamira South Sub-County Education. All Rights Reserved.</p>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I enroll my child in a school within the sub-county?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Enrollment is done directly through the respective schools. You can contact the schools listed on our <a href="/Institutions.html">Institutions</a> page for more information on admission procedures. For specific guidance, you can also reach out to the Sub-County Education Office.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Where can I find resources for teachers and students?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The <a href="/resources.html">Resources</a> page contains materials for teachers and students, including curriculum guides, examination past papers, educational policies, and online learning resources.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How do I report an issue or file a complaint about a school or educational institution?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can report an issue or file a complaint directly with the Sub-County Education Office. Visit our <a href="/Contacts.html">Contact Us</a> page for details on how to submit your concerns via email, phone, or by visiting our office in person.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Can I access examination results from schools in the sub-county?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Examination results are handled by the schools directly. However, the Sub-County Education Office may provide oversight and support. Please contact the respective school or the office for further guidance.
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-info text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Nyamira South Sub-County Education. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
