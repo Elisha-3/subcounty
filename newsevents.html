@@ -6,7 +6,9 @@
     <title>News & Events - Nyamira South Sub-County Education</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js">
+        
+    </script>
     <style>
       /* Custom styles for Login and Sign Up buttons */
       .rounded-btn {
@@ -23,6 +25,45 @@
           color: #fff;
       }
   </style>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable specific keys (F12, F3, Ctrl+Shift+I, Ctrl+Shift+J, etc.)
+    document.addEventListener('keydown', function(e) {
+      // Disable F12 (Developer Tools)
+      if (e.key === "F12") {
+        e.preventDefault();
+      }
+      
+      // Disable F3 (Search)
+      if (e.key === "F3") {
+        e.preventDefault();
+      }
+
+      // Disable Ctrl+Shift+I (Chrome DevTools)
+      if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        e.preventDefault();
+      }
+
+      // Disable Ctrl+Shift+J (Console)
+      if (e.ctrlKey && e.shiftKey && e.key === "J") {
+        e.preventDefault();
+      }
+
+      // Disable Ctrl+U (View Source)
+      if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+      }
+
+      // Disable Ctrl+S (Save Page As)
+      if (e.ctrlKey && e.key === "s") {
+        e.preventDefault();
+      }
+    });
+  </script>
 </head>
 <body>
   <section>
